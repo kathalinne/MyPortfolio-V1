@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -28,8 +28,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#bio">Bio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#bio">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -49,6 +49,12 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Undergraduate Computer Engineering Major</p>
+                <br>
+                <br>
+                <div class="col-lg-4 mb-lg-0">
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/kathalinne"><i class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/kathalinnegonzalez/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
             </div>
         </header>
 
@@ -64,8 +70,20 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Undergraduate Computer Engineering student interested in the development and research of IoT, computer vision, and computer architecture. Striving to connect my field of study to my passion for sustainability.</p></div>
-              <!--    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div> -->  
+                    <!-- <div class="col-lg-4 ms-auto">
+                        <p class="lead">Undergraduate Computer Engineering student interested in the development and research of IoT, computer vision, and computer architecture. Striving to connect my field of study to my passion for sustainability.</p>
+                    </div>
+                    <div class="col-lg-4 me-auto">
+                        <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                    </div>   -->
+                    <div class="text-center">
+                        <p class="lead">
+                            Hi there! <span> 👋🏽 </span>
+                            <br>
+                            <br>
+                            Undergraduate Computer Engineering student interested in the development and research of IoT, computer vision, and computer architecture. Striving to connect my field of study to my passion for sustainability.</p>
+                    </div>
+
                 </div>
 
                 <!-- About Section Button-->
@@ -157,17 +175,24 @@
         <!-- Contact Section-->
         <section class="page-section" id="contact">
 
-            <div class="container">
-                <form>
-                    <h3>Get In Touch!</h3>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Email id" required>
-                    <input type="text" id="phone" placeholder="Phone no." required>
-                    <textarea id="message" rows="4" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
-            </div>
+            <div class="container ">
 
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="00927be7-7bf9-443d-9646-43792936831c">
+                    
+                    <h3>Get In Touch!</h3>
+                    <!-- <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Email id" required>
+                    <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send</button> -->
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="4" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send</button> 
+
+                </form>
+                
+            </div>
             
         </section>
 
@@ -214,12 +239,29 @@
                                     
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/sound-waves.png" alt="..." />
+
+                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/sound-waves.png" alt="..." /> -->
+                                    <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/vrXL9lgyP0M?si=3_Em0yy0qtakIz_v">
+                                    </iframe>
+                                    <br>
+                                    <br>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                    <p class="mb-4" style="text-indent: 5px;">
+                                        
+                                        In Tune Trivia, two players will have the opportunity to compete to see who 
+                                        recognizes the most songs and how quickly they can guess the songs. A tone 
+                                        to a random popular song will play and whichever player presses the button 
+                                        first, will have a chance to guess the title of the song based on three
+                                         options given to them. If the chosen answer is incorrect, the second player 
+                                         is next to guess and now has a 50/50 chance to get the points. Points awarded 
+                                         are based on the time the button was pressed by the first player for each 
+                                         individual song. Goal is to accumulate the most points by guessing the title 
+                                         of the song correctly and fast.
+                                        </p>
+                                    <a href="https://github.com/kathalinne/Tune-Trivia"> 
+                                    <button class="btn btn-primary"">
+                                        Project
                                     </button>
                                 </div>
                             </div>
