@@ -91,6 +91,39 @@
   }
 }
 
+form{
+  background: #0d5a4b;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  
+}
+
+form h3{
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #b51f1f;
+  font-size: 16px;
+}
+
+form button{
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
